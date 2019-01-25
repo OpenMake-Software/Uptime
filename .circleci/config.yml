@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  deployhub-orb: depployhub/deployhub-orb@dev:1.0.0
+  deployhub-orb: deployhub/deployhub-orb@dev:1.0.0
 
 workflows:
   btd:
