@@ -1,0 +1,14 @@
+version: 2.1
+
+orbs:
+  deployhub-orb: depployhub/deployhub-orb@dev:1.0.0
+
+workflows:
+  btd:
+    jobs:
+      - deployhub-orb/approvejob:
+          userid: admin
+          password: admin
+          serverurl: https://exchange.openmakesoftware.com:8080
+          application: Uptime War for Tomcat;14
+
