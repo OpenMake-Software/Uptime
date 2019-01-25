@@ -11,3 +11,16 @@ workflows:
           password: admin
           serverurl: http://exchange.openmakesoftware.com:8080
           application: Uptime War for Tomcat;14
+      - deployhub-orb/movejob:
+          userid: admin
+          password: admin
+          serverurl: http://exchange.openmakesoftware.com:8080
+          application: Uptime War for Tomcat;14
+          from_domain: GLOBAL.My Pipeline.Development
+          move_task: Move to Integration
+      - deployhub-orb/deployjob:
+          userid: admin
+          password: admin
+          serverurl: http://exchange.openmakesoftware.com:8080
+          application: Uptime War for Tomcat;14
+          environment: GLOBAL.My Pipeline.Integration.IT Guys Int
