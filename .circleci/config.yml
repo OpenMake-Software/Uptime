@@ -9,5 +9,5 @@ workflows:
       - deployhub-orb/approvejob:
           userid: admin
           password: admin
-          serverurl: https://exchange.openmakesoftware.com:8080
+          serverurl: http://exchange.openmakesoftware.com:8080
           application: Uptime War for Tomcat;14
