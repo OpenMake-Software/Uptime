@@ -11,14 +11,14 @@ workflows:
           userid: admin
           password: admin
           serverurl: http://exchange.openmakesoftware.com:8080
-          application: Uptime War for Tomcat;14
+          application: Uptime War for Tomcat;12
       - deployhub-orb/movejob:
           requires:
             - deployhub-orb/approvejob
           userid: admin
           password: admin
           serverurl: http://exchange.openmakesoftware.com:8080
-          application: Uptime War for Tomcat;14
+          application: Uptime War for Tomcat;12
           from_domain: GLOBAL.My Pipeline.Development
           move_task: Move to Integration
       - deployhub-orb/deployjob:
@@ -27,6 +27,6 @@ workflows:
           userid: admin
           password: admin
           serverurl: http://exchange.openmakesoftware.com:8080
-          application: Uptime War for Tomcat;14
+          application: Uptime War for Tomcat;12
           environment: GLOBAL.My Pipeline.Integration.IT Guys Int
 
